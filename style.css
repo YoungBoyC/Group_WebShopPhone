@@ -1,0 +1,342 @@
+/* RESPONSIVENESS (CSS thuần với Media Queries) */
+@media (max-width: 992px) {
+    .main-title { font-size: 3rem; }
+    .hero-section { text-align: center; }
+    .product-image { text-align: center; margin-top: 30px; }
+    .service-list { flex-wrap: wrap; justify-content: center; gap: 20px; }
+    .service-item { flex-basis: 45%; }
+    .search-bar { margin: 10px 0; }
+}
+@media (max-width: 768px) {
+    .nav-menu { display: none; } /* Ẩn menu chính trên mobile, chỉ giữ logo và utility */
+    .service-item { flex-basis: 90%; }
+    .nav-container { flex-wrap: wrap; }
+    .logo, .utility-links { flex-basis: 50%; }
+}
+/*Biến Css thuần */
+:root{
+    --primary-color: #d83d73;
+    --secondary-color:#eb5757;
+    --text-color: #333;
+    --bg-light:#f7f7f7;
+    --font-stack:'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+body{
+    font-family: var(--font-stack);
+    color:var(--text-color);
+}
+
+
+/*1. Sử dụng thuần flexbox và css thuần cho HEADER*/
+.header-nav{
+    background-color:#fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding:10px 0;
+}
+
+.nav-container{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    max-width:1200px;
+    margin:0 auto;
+    padding:0 15px;
+}
+
+.nav-menu{
+    list-style:none;
+    display:flex;
+    gap:25px;
+    margin:0;
+    padding:0;
+}
+
+.nav-menu a{
+    text-decoration:none;
+    color: var(--text-color);
+    padding: 10px 0;
+    display: block;
+    font-weight:500;
+}
+
+.search-bar{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    max-width:500px;
+    margin:10px auto;
+    padding: 10px;
+}
+
+.search-bar input{
+    width:60%;
+    padding: 8px 15px;
+    border :1px solid #ddd;
+    border-radius:7px;
+}
+
+.search-bar button{
+    margin-left: 10px;
+    padding: 6px 15px;
+    background-color: #007bff;
+    color:white;
+    border: none;
+    border-radius: 8px;
+    font-size:17px;
+    cursor: pointer;
+    transition:background-color 0.3s ease, transform 0.2 ease;
+}
+
+.search-bar button:hover{
+    background-color: #014c9c;
+    transform: scale(1.05);
+}
+
+.logo a{
+    font-size: 28px;
+    font-weight: bold;
+    color:var(--text-color);
+    text-decoration:none;
+}
+
+.utility-links{
+    display: flex;
+    gap:15px;
+    margin-left: 40px;
+}
+
+.utility-links a{
+    color: var(--text-color);
+    font-size:1.2rem;
+    margin-left: 10px;
+}
+
+/* 2. HERO SECTION dùng css thuần - tạo lại ảnh */
+.hero-section{
+    background-image: url('/img/iphone/BackGroundi-Phone-17-Pro-Max.png');
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    color: var(--text-color);
+}
+
+.hero-container h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom:10px;
+}
+
+.main-title{
+    font-size:5rem;
+    font-weight: 900;
+    color:var(--primary-color);
+    text-transform:uppercase;
+    line-height:1;
+    margin-bottom: 30px;
+}
+
+.price-box{
+    background-color: #fcebeb;
+    border-radius:10px;
+    padding: 20px 30px;
+    border:2px solid var(--secondary-color);
+    display:inline-block;
+    text-align:center;
+}
+
+.price-box p{
+    font-weight:700;
+    font-size:1.2rem;
+    margin-bottom:5px;
+}
+
+.shock-price{
+    font-size:3.5rem;
+    font-weight: 900;
+    color:var(--secondary-color);
+    line-height:1.2;
+}
+
+.hero-cta{
+    margin-top: 30px;
+}
+
+.btn-primary-custom{
+    padding:15px 30px;
+    background-color:var(--primary-color);
+    color: #fff;
+    text-decoration: none;
+    border-radius:7px;
+    font-weight: 600;
+    border:none;
+    margin-right:25px;
+    transition:background-color 0.3s;
+}
+
+.btn-secondary-custom{
+    padding: 15px 30px;
+    background-color: #adb5bd;
+    color:var(--text-color);
+    text-decoration:none;
+    border-radius:7px;
+    border:1px sloid var(--text-color);
+    font-weight:600;
+}
+
+/* 3. SERVICE SECTION Sử dụng flexbox và css thuần */
+.service-section{
+    padding:40px 0;
+    background-color: #fff;
+}
+
+.service-list{
+    display:flex;
+    justify-content:space-between;
+    max-width:1200px;
+    margin:0 auto;
+    padding: 0 15px;
+}
+
+.service-item{
+    flex-basis:25%; /*Cho chiem khoang 1/4 */
+    text-align: center;
+    padding:10px 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    background-color: #fff;
+    margin: 0 15px;
+}
+
+.service-item i{
+    font-size:2.2rem;
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+.service-item.hotline-box{
+    background-color: #fcebeb;
+}
+
+.service-item.hotline-box i{
+    color:var(--secondary-color);
+}
+
+.service-item h5{
+    font-size:1rem;
+    font-weight:700;
+    margin-bottom: 8px;
+}
+
+.service-item small{
+    color:#666;
+}
+
+/* 4. PRODUCT CARDS sử dụng Bootstrap Grid*/
+.product-cards-section{
+    padding:50px 0;
+    background-color: var(--bg-light);
+}
+
+.product-card{
+    height: 250px;
+    position: relative;
+    overflow:hidden;
+    border-radius: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.product-card img{
+    background-color: #ffffff;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    object-fit:contain;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover img{
+    transform:scale(1.05);
+}
+
+.card-overlay{
+    position:absolute;
+    bottom: 0;
+    left:0;
+    right: 0;
+    padding: 20px;
+    background: linear-gradient(0deg,rgba(0,0,0,0.8) 0%, rgba(0,0,0,0)100%);
+    color: white;
+}
+
+.card-overlay h5{
+    font-size:1.5rem;
+    color: #fff;
+    font-weight:700;
+    margin-bottom: 5px;
+    text-shadow: 0 8px 16px rgba(0,0,0,0.8); 
+    text-transform: uppercase;
+}
+
+.btn-card{
+    background-color: #fff;
+    color: var(--text-color);
+    padding:5px 15px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    display:inline-block;
+    margin-top:10px;
+}
+
+.card-special .btn-card{
+    background-color:var(--primary-color);
+    color: #fff;
+}
+
+.btn-primary{
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    transition:background-color 0.3s ease;
+}
+
+.btn-primary:hover{
+    background-color: #c73665 !important;
+    border-color: #f5f230 !important;
+}
+
+
+/* 5. FOOTER */
+.footer{
+    background-color: #2d2f31;
+    font-size: 1.05rem;
+    color: #adb5bd;
+    padding:40px 0 20px;
+}
+
+.footer a{
+    color: #adb5bd;
+    text-decoration:none;
+    transition: color 0.3s ease;
+}
+    
+.footer a:hover{
+    color: #c73232;
+}
+
+.footer h5{
+    text-transform: uppercase;
+    font-size: 170%;
+}
+
+
+
+
+

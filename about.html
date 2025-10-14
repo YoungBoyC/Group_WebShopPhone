@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu - ShopPhoneS</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-color: #e91e63;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            color: #333;
+            background-color: #fff;
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero-about {
+            background-color: #fcfcfc;
+            text-align: center;
+            padding: 80px 0;
+        }
+
+        .hero-about h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .hero-about p {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 700px;
+            margin: 15px auto 30px;
+        }
+
+        .hero-about img {
+            max-width: 900px;
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* ===== CÂU CHUYỆN ===== */
+        .story-section {
+            padding: 80px 0;
+        }
+
+        .story-section h2 {
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .story-section p {
+            color: #666;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        /* ===== GIÁ TRỊ CỐT LÕI ===== */
+        .core-values {
+            background-color: #f8f8f8;
+            padding: 80px 0;
+        }
+
+        .core-values h3 {
+            text-transform: uppercase;
+            color: var(--primary-color);
+            font-weight: 700;
+            margin-bottom: 40px;
+        }
+
+        .value-box {
+            background-color: #fff;
+            border-left: 5px solid var(--primary-color);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+
+        .value-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .value-box i {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        /* ===== HÌNH ẢNH CỬA HÀNG ===== */
+        .gallery img {
+            border-radius: 12px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* ===== CAM KẾT ===== */
+        .commitment {
+            padding: 60px 0;
+        }
+
+        .commitment .card {
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+
+        .commitment .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .commitment i {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+        }
+
+        /* ===== CTA CUỐI TRANG ===== */
+        .cta-section {
+            background-color: #f8f8f8;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .cta-section h2 {
+            font-weight: 700;
+            color: #333;
+        }
+
+        .btn-primary-custom {
+            background-color: var(--primary-color);
+            border: none;
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .btn-primary-custom:hover {
+            background-color: #c2185b;
+        }
+
+        .btn-outline-custom {
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            padding: 12px 24px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .btn-outline-custom:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav class="header-nav" >
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">Apple-PhoneS</a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                <button type="submit">Tìm Kiếm</button>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Sản phẩm</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+            <div class="utility-links">
+                <a href="#"><i class="bi bi-person"></i></a>
+                <a href="#"><i class="bi bi-cart"></i></i></a>
+            </div>
+        </div>
+    </nav>
+    <!-- HERO -->
+    <section class="hero-about">
+        <div class="container">
+            <h1>HƠN CẢ MỘT CỬA HÀNG CÔNG NGHỆ</h1>
+            <p>Sứ mệnh của ShopPhoneS là mang đến trải nghiệm công nghệ chuẩn Apple, chính hãng và đáng tin cậy cho mọi khách hàng.</p>
+            <img src="#" alt="Đội ngũ ShopPhoneS">
+        </div>
+    </section>
+
+    <!-- STORY -->
+    <section class="story-section text-center">
+        <div class="container">
+            <h2>Câu chuyện của ShopPhoneS</h2>
+            <p>
+                Khởi nguồn từ niềm đam mê với công nghệ Apple, ShopPhoneS được thành lập nhằm mang đến cho người dùng Việt Nam trải nghiệm mua sắm
+                thiết bị chính hãng với giá trị thật. Chúng tôi không chỉ bán sản phẩm – chúng tôi mang đến sự tin tưởng, chất lượng và dịch vụ tận tâm.
+            </p>
+        </div>
+    </section>
+
+    <!-- CORE VALUES -->
+    <section class="core-values text-center">
+        <div class="container">
+            <h3>Giá trị cốt lõi</h3>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="value-box h-100">
+                        <i class="bi bi-patch-check-fill"></i>
+                        <h5 class="fw-bold">Chính Hãng 100%</h5>
+                        <p>Sản phẩm có nguồn gốc rõ ràng, bảo hành chính hãng theo tiêu chuẩn của Apple.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="value-box h-100">
+                        <i class="bi bi-person-heart"></i>
+                        <h5 class="fw-bold">Tư Vấn Tận Tâm</h5>
+                        <p>Đội ngũ chuyên viên luôn sẵn sàng hỗ trợ, mang đến trải nghiệm tốt nhất cho khách hàng.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="value-box h-100">
+                        <i class="bi bi-lightbulb-fill"></i>
+                        <h5 class="fw-bold">Không Ngừng Đổi Mới</h5>
+                        <p>Luôn cập nhật xu hướng, sản phẩm và công nghệ mới nhất để phục vụ khách hàng.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- GALLERY -->
+    <section class="container py-5">
+        <h3 class="text-center fw-bold mb-4 text-uppercase" style="color: var(--primary-color);">Hình ảnh cửa hàng</h3>
+        <div class="row g-4 gallery">
+            <div class="col-md-4"><img src="#" alt="Cửa hàng 1"></div>
+            <div class="col-md-4"><img src="#" alt="Cửa hàng 2"></div>
+            <div class="col-md-4"><img src="#" alt="Cửa hàng 3"></div>
+        </div>
+    </section>
+
+    <!-- COMMITMENT -->
+    <section class="commitment">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-md-3">
+                    <div class="card p-4">
+                        <i class="bi bi-truck"></i>
+                        <h6 class="mt-3 fw-bold">Miễn phí giao hàng</h6>
+                        <p>Đơn hàng trên 5 triệu</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card p-4">
+                        <i class="bi bi-gift"></i>
+                        <h6 class="mt-3 fw-bold">Quà tặng hấp dẫn</h6>
+                        <p>Áp dụng cho đơn hàng đặc biệt</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card p-4">
+                        <i class="bi bi-patch-check"></i>
+                        <h6 class="mt-3 fw-bold">Chính hãng Apple</h6>
+                        <p>Bảo hành 12 tháng toàn quốc</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card p-4">
+                        <i class="bi bi-headset"></i>
+                        <h6 class="mt-3 fw-bold">Hỗ trợ 24/7</h6>
+                        <p>Hotline: 1900 1234</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <h2>Sẵn sàng trải nghiệm sự khác biệt?</h2>
+        <p class="mt-3 mb-4 text-muted">Khám phá sản phẩm Apple chính hãng cùng ưu đãi thành viên độc quyền.</p>
+        <a href="trang-san-pham.html" class="btn btn-primary-custom me-3">
+            <i class="bi bi-bag-fill me-2"></i>Mua sắm ngay
+        </a>
+        <a href="trang-lien-he.html" class="btn btn-outline-custom">
+            Liên hệ hỗ trợ
+        </a>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
