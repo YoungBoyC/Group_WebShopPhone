@@ -96,85 +96,56 @@ body{
     margin-left: 10px;
 }
 
-/*Hero-Section*/
-.hero-section{
-    background-image: url('/img/background/BackGroundi-Phone-17-Pro-Max.png');
-    background-size: 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    padding: 100px 0;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    color: var(--text-color);
+/*Main*/
+.main-content-wrapper{
+    padding-top: 10px;
+    background-color: #f5f5f5;
+}
+.sidebar-menu-col{
+    position: sticky;
+    top:10px;
+    height: fit-content;
+    align-self: flex-start;
 }
 
-.hero-container h1{
-    font-size: 2.5rem;
+.sidebar-nav{
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.sidebar-title{
+    font-size: 1rem;
     font-weight: 700;
-    margin-bottom:10px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    color: var(--primary-color);
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
 }
 
-.main-title{
-    font-size:5rem;
-    font-weight: 900;
-    color:var(--primary-color);
-    text-transform:uppercase;
-    line-height:1;
-    margin-bottom: 30px;
+.sidebar-nav ul{
+    padding: 0;
+    margin-bottom: 0;
 }
 
-.price-box{
-    background-color: #fcebeb;
-    border-radius:10px;
-    padding: 20px 30px;
-    border:2px solid var(--secondary-color);
-    display:inline-block;
-    text-align:center;
-}
-
-.price-box p{
-    font-weight:700;
-    font-size:1.2rem;
-    margin-bottom:5px;
-}
-
-.shock-price{
-    font-size:3.5rem;
-    font-weight: 900;
-    color:var(--secondary-color);
-    line-height:1.2;
-}
-
-.hero-cta{
-    margin-top: 30px;
-}
-
-.hero-cta .btn-primary-custom{
-    padding:15px 30px;
-    background-color:var(--primary-color);
-    color: #fff;
-    text-decoration: none;
-    border-radius:7px;
-    font-weight: 600;
-    border:none;
-    margin-right:25px;
-    transition:background-color 0.3s;
-}
-
-.hero-cta .btn-secondary-custom{
-    padding: 15px 30px;
-    background-color: #adb5bd;
-    color:var(--text-color);
+.sidebar-nav li a{
+    display: block;
+    padding:8px 0;
+    color: var(--text-color);
     text-decoration:none;
-    border-radius:7px;
-    border:1px sloid var(--text-color);
-    font-weight:600;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+
+.sidebar-nav li a:hover{
+    color: var(--primary-color);
+    font-weight: 500;
 }
 
 /*Hero*/
 .hero-about {
-    background-color: #f8f8f8;
+    background: linear-gradient(to right, #E2ECF2, #E5DCD1, #977c6c);
     text-align: center;
     padding: 80px 0;
 }
@@ -202,6 +173,7 @@ body{
 
 /*Câu chuyện */
 .story-section {
+    background-color: #f5f5f5;
     padding: 80px 0;
 }
 

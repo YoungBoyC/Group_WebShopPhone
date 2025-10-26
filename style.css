@@ -114,7 +114,7 @@ body{
 
 /* 2. HERO SECTION dùng css thuần - tạo lại ảnh */
 .hero-section{
-    background-image: url('/img/background/BackGroundi-Phone-17-Pro-Max.png');
+    background-image: url('/img/background/BackGroundi-Phone-17-Pro-Max.webp');
     background-size: 100%;
     background-position: center center;
     background-repeat: no-repeat;
