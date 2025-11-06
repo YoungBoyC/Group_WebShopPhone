@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Trang Chủ - ShopPhoneS</title>
+</head>
+<body>
+    <header>
+        <nav class="header-nav" >
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html">Apple-PhoneS</a>
+                </div>
+
+                <div class="search-bar">
+                    <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                    <button type="submit">Tìm Kiếm</button>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="about.html">Giới thiệu</a></li>
+                    <li><a href="product.html">Sản phẩm</a></li>
+                    <li class="has-dropdown">
+                        <a href="#">Xem thêm</a>
+                        <ul>
+                            <li><a href="#myVideo" id="discoverVideoLink">Khám phá cửa hàng</a></li>
+                            <li><a href="#promotion-sections">Ưu đãi</a></li>
+                            <li><a href="#review-product">Review</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+                <div class="utility-links">
+                    <a href="#"><i class="bi bi-person"></i></a>
+                    <a href="#"><i class="bi bi-cart"></i></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+        <section class="hero-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 hero-container">
+                        <h1>IPhone 17 Pro Max</h1>
+                        <h2 class="main-title">Giá cực sốc</h2>
+                        <div class="price-box">
+                            <p>Giá chỉ từ</p>
+                            <span class="shock-price">39.990.000</span>
+                            <span style="font-weight: bold;">VNĐ</span>
+                        </div>
+                        <div class="hero-cta">
+                            <a href="#" class="btn-primary-custom">Mua Ngay</a>
+                            <a href="#" class="btn-secondary-custom">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+           <section class="service-section">
+            <div class="service-list">
+                <div class="service-item">
+                    <i class="bi bi-truck"></i>
+                    <h5>Miễn phí vận chuyển</h5>
+                    <small>Đơn hàng từ 5 triệu</small>
+                </div>
+
+                <div class="service-item">
+                    <i class="bi bi-gift" style="color: #ffc107;"></i>
+                    <h5>Quà tặng hấp dẫn</h5>
+                    <small>Giá trị lên đến 3 triệu</small>
+                </div>
+
+                <div class="service-item">
+                    <i class="bi bi-patch-check"></i>
+                    <h5>Chứng nhận chất lượng</h5>
+                    <small>Sản phẩm chính hãng</small>
+                </div>
+
+                <div class="service-item hotline-box">
+                    <i class="bi bi-headset"></i>
+                    <h5 style="color:var(--secondary-color)">Hotline: 1977 8386</h5>
+                    <small style="color:var(--secondary-color); font-weight: bold;">Hỗ trợ 24/7</small>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="product-cards-section">
+            <div class="container">
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <a href="#" class="product-card" style="background-color: #333;">
+                            <img src="./img/smarth/Apple Watch Series 11 42mm (GPS) Viền Nhôm Dây Cao Su Size M-L.webp" alt="Apple Watch Series 11">
+                            <div class="card-overlay">
+                                <h5 >APPLE WATCH SERIES 11</h5>
+                                <span class="btn-card">Xem Ngay <i class="bi bi-arrow-right"></i></span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4">
+                        <a href="#" class="product-card" style="background-color: #555;">
+                            <img src="./img/earphone/AirPods-Pro-2-2023.webp" alt="Airpods Pro 2">
+                            <div class="card-overlay">
+                                <h5>AIRPRODS PRO 2</h5>
+                                <p style="font-weight:0.9rem ;">Âm Thanh Sống Động</p>
+                                <span class="btn-card">Xem Ngay <i class="bi bi-arrow-right"></i></span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4">
+                        <a href="#" class="product-card card-special" style="background-color: #777;">
+                            <img src="./img/iphone/iphone-17-pro-max-2_1.webp" alt="Iphone 17">
+                            <div class="card-overlay">
+                                <h5>NEW IPHONE BY APPLE</h5>
+                                <p style="font-size:0.9 rem;">Thiết Kế Tinh Tế</p>
+                                <span class="btn-card" style="background-color: var(--primary-color);color: #fff;">XEM NGAY <i class="bi bi-arrow-right"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div> 
+        </section>
+
+        <!--CATEGORY SECTION (Phần chưng sản phẩm)-->
+        <section class="product-category-section py-5">
+
+            <!--IPHONE-->
+            <div class="container-fluid">
+                <div class="category-header text-center mb-5">
+                    <h2 class="category-title mb-4"><i class="bi bi-apple"></i>IPhone</h2>
+                </div>
+
+                <div class="product-carousel-wrapper mb-5">
+                    <button class="carousel-control prev-btn"><i class="bi bi-arrow-left"></i></button>
+                    <div class="product-list g-4 justify-content-center">
+
+                        <!--Sắp có hàng-->
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="product-card-category new-arrival">
+                                <span class="badge-custom">Mới</span>
+                                <div class="product-image-box">
+                                    <img src="./img/iphone//iphone-17-pro-max-2_1.webp" alt="Iphone 17 Pro Max 256GB" class="img-fluid">
+                                </div>
+                                <h4 class="product-name">IPhone 17 Pro Max 128GB</h4>
+                                <div class="product-price-info">
+                                    <p class="current-price">39.990.000 VNĐ</p>
+                                    <p class="status-text">Hàng sắp về</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Hàng giảm giá-->
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="product-card-category discounted">
+                                <span class="badge-custom">Giảm giá</span>
+                                <div class="product-image-box">
+                                    <img src="./img/iphone/iphone-16-pro-titan-29.090.000_11zon.webp" alt="IPhone 16 Pro Titan 256GB" class="img-fluid">
+                                </div>
+                                <h4 class="product-name">IPhone 16 Pro Titan 128GB</h4>
+                                <div class="product-price-info">
+                                    <p class="old-price">30.990.000 VNĐ</p>
+                                    <p class="discount-percent">- 7%</p>
+                                    <p class="current-price">28.550.000 VNĐ</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Sẵn hàng-->
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="product-card-category available">
+                                <div class="product-image-box">
+                                    <img src="./img/iphone/iphone-11-trang-3.990.000_11zon.webp" alt="IPhone 11 Trắng 64GB" class="img-fluid">
+                                </div>
+                                <h4 class="product-name">IPhone 11 White 64GB</h4>
+                                <div class="product-price-info">
+                                    <p class="current-price">6.990.000 VNĐ</p>
+                                    <p class="status-text">Còn hàng</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Bán chạy-->
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="product-card-category best-seller">
+                                <span class="badge-custom">Bán chạy</span>
+                                <div class="product-image-box">
+                                    <img src="./img/iphone/iphone-12-xanh-la-7.890.000_11zon.webp" alt="IPhone 12 Xanh lá 128GB" class="img-fluid">
+                                </div>
+                                <h4 class="product-name">IPhone 12 Xanh lá 128GB</h4>
+                                <dic class="product-price-info">
+                                    <p class="current-price">8.990.000 VNĐ</p>
+                                    <p class="status-text">Nổi bật</p>
+                                </dic>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="product-card-category best-seller">
+                                <span class="badge-custom">Bán chạy</span>
+                                <div class="product-image-box">
+                                    <img src="./img/iphone/iphone-13-8.990.000_11zon-1.webp" alt="IPhone 13 128GB" class="img-fluid">
+                                </div>
+                                <h4 class="product-name">IPhone 13 Black 128GB</h4>
+                                <div class="product-price-info">
+                                    <p class="current-price">10.590.000 VNĐ</p>
+                                    <p class="status-text">Nổi bật</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control next-btn"><i class="bi bi-arrow-right"></i></button>
+                </div>
+            </div>
+            
+            <!--MacBook-->
+            <div class="category-header text-center mt-5 mb-5">
+                <h2 class="category-title mb-4"><i class="bi bi-laptop-fill"></i>MacBook</h2>
+            </div>
+            
+            <div class="product-carousel-wrapper">
+                <button class="carousel-control prev-btn"><i class="bi bi-arrow-left"></i></button>
+                <div class="product-list g-4 justify-content-center">   
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product-card-category available">
+                          <div class="product-image-box">
+                            <img src="./img/macbook/Apple MacBook Air M1 256GB 2020.webp" alt="Apple MacBook Air M1 256GB 2020" class="img-fluid">
+                          </div>
+                          <h4 class="product-name">MacBook Air M1 256GB 2020</h4>
+                          <div class="product-price-info">
+                            <p class="current-price">15.990.000 VNĐ</p>
+                            <p class="status-text">Còn Hàng</p>                      
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product-card-category best-seller">
+                            <span class="badge-custom">Bán chạy</span>
+                            <div class="product-image-box">
+                                <img src="./img/macbook/Apple MacBook Air M2 2024 8CPU 8GPU 16GB 256GB.webp" alt="Apple MacBook Air M2 2024 8CPU 8GPU 16GB 256GB" class="img-fluid">
+                            </div>
+                            <h4 class="product-name">MacBook Air M2 2024 8CPU 8GPU 16GB 256GB</h4>
+                            <div class="product-price-info">
+                                <p class="current-price">19.890.000 VNĐ</p>
+                                <p class="status-text">Nổi bật</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product-card-category discounted">
+                            <span class="badge-custom">Giảm giá</span>
+                            <div class="product-image-box">
+                                <img src="./img/macbook/MacBook Air M4 13 inch 2025 10CPU 10GPU 16GB 512GB Sạc 70W.webp" alt="MacBook Air M4 13 inch 2025 10CPU 10GPU 16GB 512GB Sạc 70W" class="img-fluid">
+                            </div>
+                            <h4 class="product-name">MacBook Air M4 13 inch 2025 10CPU 10GPU 16GB 512GB Sạc 70W</h4>
+                            <div class="product-price-info">
+                                <p class="old-price">31.290.000 VNĐ</p>
+                                <p class="discount-percent">- 10%</p>
+                                <p class="current-price">29.290.000 VNĐ</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product-card-category available">
+                          <div class="product-image-box">
+                            <img src="./img/macbook/MacBook Air M4 13 inch 2025 10CPU 10GPU 16GB 512GB.webp" alt="MacBook Air M4 13 inch 2025 10CPU 10GPU 16GB 512GB" class="img-fluid">
+                          </div>
+                          <h4 class="product-name">MacBook Air M4 13 inch 2025 10CPU 10GPU 16GB 512GB</h4>
+                          <div class="product-price-info">
+                            <p class="current-price">30.790.000 VNĐ</p>
+                            <p class="status-text">Còn Hàng</p>                      
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product-card-category available">
+                          <div class="product-image-box">
+                            <img src="./img/macbook/MacBook Air M4 13 inch 2025 10CPU 8GPU 16GB 256GB Sạc 70W.webp" alt="MacBook Air M4 13 inch 2025 10CPU 8GPU 16GB 256GB Sạc 70W" class="img-fluid">
+                          </div>
+                          <h4 class="product-name">MacBook Air M4 13 inch 2025 10CPU 8GPU 16GB 256GB Sạc 70W</h4>
+                          <div class="product-price-info">
+                            <p class="current-price">25.890.000 VNĐ</p>
+                            <p class="status-text">Còn Hàng</p>                      
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control next-btn"><i class="bi bi-arrow-right"></i></button>
+            </div>
+
+            <!--IPad-->
+            <div class="category-header text-center mt-5 mb-5">
+                <h2 class="category-title mb-4"><i class="bi bi-tablet-landscape-fill"></i>IPad</h2>
+            </div>
+            
+            <div class="product-carousel-wrapper">
+                <button class="carousel-control prev-btn"><i class="bi bi-arrow-left"></i></button>
+                <div class="product-list g-4 justify-content-center">   
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product-card-category available">
+                          <div class="product-image-box">
+                            <img src="./img/ipad/iPad 10.2 2021 WiFi 64GB.webp" alt="iPad 10.2 2021 WiFi 64GB" class="img-fluid">
+                          </div>
+                          <h4 class="product-name">iPad 10.2 2021 WiFi 64GB</h4>
+                          <div class="product-price-info">
+                            <p class="current-price">5.790.000 VNĐ</p>
+                            <p class="status-text">Còn Hàng</p>                      
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product-card-category best-seller">
+                            <span class="badge-custom">Bán chạy</span>
+                            <div class="product-image-box">
+                                <img src="./img/ipad/iPad A16 5G 128GB 2025.webp" alt="iPad A16 5G 128GB 2025" class="img-fluid">
+                            </div>
+                            <h4 class="product-name">iPad A16 5G 128GB 2025</h4>
+                            <div class="product-price-info">
+                                <p class="current-price">13.690.000 VNĐ</p>
+                                <p class="status-text">Nổi bật</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product-card-category discounted">
+                            <span class="badge-custom">Giảm giá</span>
+                            <div class="product-image-box">
+                                <img src="./img/ipad/iPad A16 5G 256GB 2025.webp" alt="iPad A16 5G 256GB 2025" class="img-fluid">
+                            </div>
+                            <h4 class="product-name">iPad A16 5G 256GB 2025</h4>
+                            <div class="product-price-info">
+                                <p class="old-price">16.490.000 VNĐ</p>
+                                <p class="discount-percent">- 10%</p>
+                                <p class="current-price">15.490.000 VNĐ</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product-card-category available">
+                          <div class="product-image-box">
+                            <img src="./img/ipad/iPad A16 Wifi 128GB 2025.webp" alt="iPad A16 Wifi 128GB 2025" class="img-fluid">
+                          </div>
+                          <h4 class="product-name">iPad A16 Wifi 128GB 2025</h4>
+                          <div class="product-price-info">
+                            <p class="current-price">9.790.000 VNĐ</p>
+                            <p class="status-text">Còn Hàng</p>                      
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product-card-category available">
+                          <div class="product-image-box">
+                            <img src="./img/ipad/iPad A16 Wifi 256GB 2025.webp" alt="iPad A16 Wifi 256GB 2025" class="img-fluid">
+                          </div>
+                          <h4 class="product-name">iPad A16 Wifi 256GB 2025</h4>
+                          <div class="product-price-info">
+                            <p class="current-price">12.890.000 VNĐ</p>
+                            <p class="status-text">Còn Hàng</p>                      
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control next-btn"><i class="bi bi-arrow-right"></i></button>
+            </div>
+
+            <!--Apple Watch-->
+            <div class="category-header text-center mt-5 mb-5">
+                <h2 class="category-title mb-4"><i class="bi bi-smartwatch"></i>Apple Watch</h2h2>
+            </div>
+
+            <div class="product-carousel-wrapper">
+                <button class="carousel-control prev-btn"><i class="bi bi-arrow-left"></i></button>
+                <div class="product-list g-4 justify-content-center">   
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product-card-category available">
+                          <div class="product-image-box">
+                            <img src="./img/smarth/Apple Watch SE 2 2024 40mm (GPS) Viền Nhôm Dây Cao Su.webp" alt="Apple Watch SE 2 2024 40mm (GPS) Viền Nhôm Dây Cao Su" class="img-fluid">
+                          </div>
+                          <h4 class="product-name">Apple Watch SE 2 2024 40mm (GPS) Viền Nhôm Dây Cao Su</h4>
+                          <div class="product-price-info">
+                            <p class="current-price">5.790.000 VNĐ</p>
+                            <p class="status-text">Còn Hàng</p>                      
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product-card-category best-seller">
+                            <span class="badge-custom">Bán chạy</span>
+                            <div class="product-image-box">
+                                <img src="./img/smarth/Apple Watch SE 2 2024 44mm (GPS) Viền Nhôm Dây Cao Su.webp" alt="Apple Watch SE 2 2024 44mm (GPS) Viền Nhôm Dây Cao Su" class="img-fluid">
+                            </div>
+                            <h4 class="product-name">Apple Watch SE 2 2024 44mm (GPS) Viền Nhôm Dây Cao Su</h4>
+                            <div class="product-price-info">
+                                <p class="current-price">6.690.000 VNĐ</p>
+                                <p class="status-text">Nổi bật</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product-card-category discounted">
+                            <span class="badge-custom">Giảm giá</span>
+                            <div class="product-image-box">
+                                <img src="./img/smarth/Apple Watch SE 3 40mm (GPS) Viền Nhôm Dây Cao Su Size S-M.webp" alt="Apple Watch SE 3 40mm (GPS) Viền Nhôm Dây Cao Su Size S-M" class="img-fluid">
+                            </div>
+                            <h4 class="product-name">Apple Watch SE 3 40mm (GPS) Viền Nhôm Dây Cao Su Size S-M</h4>
+                            <div class="product-price-info">
+                                <p class="old-price">6.790.000 VNĐ</p>
+                                <p class="discount-percent">- 10%</p>
+                                <p class="current-price">5.790.000 VNĐ</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product-card-category available">
+                          <div class="product-image-box">
+                            <img src="./img/smarth/Apple Watch Series 10 42mm (GPS) Viền Nhôm Dây Cao Su Size S-M.webp" alt="Apple Watch Series 10 42mm (GPS) Viền Nhôm Dây Cao Su Size S-M" class="img-fluid">
+                          </div>
+                          <h4 class="product-name">Apple Watch Series 10 42mm (GPS) Viền Nhôm Dây Cao Su Size S-M</h4>
+                          <div class="product-price-info">
+                            <p class="current-price">10.490.000 VNĐ</p>
+                            <p class="status-text">Còn Hàng</p>                      
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product-card-category available">
+                          <div class="product-image-box">
+                            <img src="./img/smarth/Apple Watch Series 11 42mm (GPS) Viền Nhôm Dây Cao Su Size M-L.webp" alt="Apple Watch Series 11 42mm (GPS) Viền Nhôm Dây Cao Su Size M-L" class="img-fluid">
+                          </div>
+                          <h4 class="product-name">Apple Watch Series 11 42mm (GPS) Viền Nhôm Dây Cao Su Size M-L</h4>
+                          <div class="product-price-info">
+                            <p class="current-price">11.890.000 VNĐ</p>
+                            <p class="status-text">Còn Hàng</p>                      
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control next-btn"><i class="bi bi-arrow-right"></i></button>
+            </div>
+
+            <!--EarPhone-->
+            <div class="category-header text-center mt-5 mb-5">
+                <h2 class="category-title mb-4"><i class="bi bi-smartwatch"></i>Apple Watch</h2h2>
+            </div>
+
+            <div class="product-carousel-wrapper">
+                <button class="carousel-control prev-btn"><i class="bi bi-arrow-left"></i></button>
+                <div class="product-list g-4 justify-content-center">   
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product-card-category available">
+                          <div class="product-image-box">
+                            <img src="./img/earphone/airpods-4-2.webp" alt="airpods-4-2" class="img-fluid">
+                          </div>
+                          <h4 class="product-name">AirPods 4</h4>
+                          <div class="product-price-info">
+                            <p class="current-price">3.790.000 VNĐ</p>
+                            <p class="status-text">Còn Hàng</p>                      
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product-card-category best-seller">
+                            <span class="badge-custom">Bán chạy</span>
+                            <div class="product-image-box">
+                                <img src="./img/earphone/AirPods-Pro-2-2023.webp" alt="AirPods-Pro-2-2023" class="img-fluid">
+                            </div>
+                            <h4 class="product-name">AirPods Pro 2 2023</h4>
+                            <div class="product-price-info">
+                                <p class="current-price">5.690.000 VNĐ</p>
+                                <p class="status-text">Nổi bật</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product-card-category discounted">
+                            <span class="badge-custom">Giảm giá</span>
+                            <div class="product-image-box">
+                                <img src="./img/earphone/AirPods-Pro-3.webp" alt="AirPods-Pro-3" class="img-fluid">
+                            </div>
+                            <h4 class="product-name">Tai nghe Bluetooth Apple AirPods Pro 3 2025 Type-C | Chính hãng (MFHP4ZP/A) </h4>
+                            <div class="product-price-info">
+                                <p class="old-price">6.790.000 VNĐ</p>
+                                <p class="discount-percent">- 10%</p>
+                                <p class="current-price">5.790.000 VNĐ</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product-card-category available">
+                          <div class="product-image-box">
+                            <img src="./img/earphone/airpods_pro_2-2022.webp" alt="airpods_pro_2-2022" class="img-fluid">
+                          </div>
+                          <h4 class="product-name">Tai nghe Bluetooth Apple AirPods Pro 2 2023 USB-C | Chính hãng Apple Việt Nam</h4>
+                          <div class="product-price-info">
+                            <p class="current-price">5.590.000 VNĐ</p>
+                            <p class="status-text">Còn Hàng</p>                      
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product-card-category available">
+                          <div class="product-image-box">
+                            <img src="./img/earphone/apple-airpods-max-3_1.webp" alt="apple-airpods-max-3_1" class="img-fluid">
+                          </div>
+                          <h4 class="product-name">Tai nghe chụp tai chống ồn Apple AirPods Max 2024 | Chính hãng Apple Việt Nam</h4>
+                          <div class="product-price-info">
+                            <p class="current-price">13.890.000 VNĐ</p>
+                            <p class="status-text">Còn Hàng</p>                      
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control next-btn"><i class="bi bi-arrow-right"></i></button>
+            </div>
+        </section>
+
+        <!--VIDEO SECTION-->
+        <div class="video-container-wrapper full-screen-video my-5 ">
+            <div class="video-responsive">
+                <iframe 
+                    class="video-player background-video responsive-iframe"
+                    id="myVideo" 
+                    src="https://www.youtube.com/embed/2iiXu82_3ZQ?autoplay=1&mute=1&loop=1&playlist=2iiXu82_3ZQ"
+                    title="HẢI TRIỀU BAY SANG THÁI LAN CHECK THỬ APPLE STORE" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+                <div class="video-overlay">
+                    <h3 class="text-center mb-4 video-title">Khám phá cửa hàng công nghệ Applle Store</h3>
+                    <p class="text-center mt-3 video-caption">
+                        Video giới thiệu toàn cảnh hệ thống cửa hàng Apple tại Singapore - 
+                        nơi hội tụ thiết kế hiện đại, không gian mở và trải nghiệm công nghệ đẳng cấp. 
+                        Cùng khám phá cách Apple mang đến sự kết hợp hoàn hảo giữa nghệ thuật, ánh sáng và công nghệ 
+                        trong từng chi tiết của cửa hàng flagship này.
+                    </p>
+                    <a href="product.html" class="btn-discover-video" >Khám phá ngay</a>
+                </div>
+            </div>
+        </div>
+
+        <!--PROMOTION SECTION-->
+        <section class="promotions-section" id="promotion-sections">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-6 promotion-column">
+                        <h3 class="promotion-title">ưu đãi sinh viên</h3>
+                        <div class="promotion-banners">
+                            <a href="#" class="promotion-banner-item">
+                                <img src="./img/background/uudai-sinhvien.png"alt="Ưu đãi Sinh Viên">
+                            </a>
+                            <a href="#" class="promotion-banner-item">
+                                <img src="./img/background/uudai-tuutruong.png" alt="Ưu đãi Back To School">
+                            </a>
+                            <a href="#" class="promotion-banner-item">
+                                <img src="./img/background/uudai-iphone.png" alt="Ưu đãi IPhone">
+                            </a>
+                            <a href="#" class="promotion-banner-item">
+                                <img src="./img/background/uudai-macbook.png" alt="Ưu đãi MacBook">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 promotion-column">
+                        <h3 class="promotion-title">ưu đãi thanh toán</h3>
+                        <div class="promotion-banners">
+                            <a href="#" class="promotion-banner-item">
+                                <img src="./img/background/uudai-thanhtoanhscb.png" alt="Ưu đãi Thanh toán HSBC" >
+                            </a>
+                            <a href="#" class="promotion-banner-item">
+                                <img src="./img/background/uudai-thanhtoanuob.png" alt="Ưu đãi Thanh toán UOB" >
+                            </a>
+                            <a href="#" class="promotion-banner-item">
+                                <img src="./img/background/uudai-thanhtoanvib.png" alt="Ưu đãi Thanh toán VIB" >
+                            </a>
+                            <a href="#" class="promotion-banner-item">
+                                <img src="./img/background/uudai-thanhtoanmbbank.png" alt="Ưu đãi Thanh toán MB BANK">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="review-section py-5" id="review-product">
+            <div class="container-review">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h2 class="reivew-title text-uppercase">Review sản phẩm</h2>
+                    <a href="https://www.youtube.com/@duyyy.real.channel" class="review-more-link">Xem thêm <i class="bi bi-chevron-right"></i></a>
+                </div>
+                <div class="video-card-grid">
+                    <div class="video-card-item">
+                        <div class="video-thumb-container">
+                            <iframe 
+                                class="responsive-iframe"
+                                src="https://www.youtube.com/embed/nOSNotrrNV4" 
+                                title="iPhone 17 Pro Max PHỐT nhiều quá !!!" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="card-review-content">
+                            <p class="card-review-title">iPhone 17 Pro Max PHỐT nhiều quá !</p>
+                            <div class="product-info-mini">
+                                <img src="./img/iphone/iphone-17-pro-max-2_1.webp" alt="IPhone mini icon">
+                                <div>
+                                    <p class="product-name-mini">IPhone 17 Pro Max 256GB</p>
+                                    <p class="product-price-mini">39.990.000 VNĐ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-card-item">
+                        <div class="video-thumb-container">
+                            <iframe 
+                                class="responsive-iframe"
+                                src="https://www.youtube.com/embed/nOSNotrrNV4" 
+                                title="iPhone 17 Pro Max PHỐT nhiều quá !!!" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="card-review-content">
+                            <p class="card-review-title">iPhone 17 Pro Max PHỐT nhiều quá !</p>
+                            <div class="product-info-mini">
+                                <img src="./img/iphone/iphone-17-pro-max-2_1.webp" alt="IPhone mini icon">
+                                <div>
+                                    <p class="product-name-mini">IPhone 17 Pro Max 256GB</p>
+                                    <p class="product-price-mini">39.990.000 VNĐ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-card-item">
+                        <div class="video-thumb-container">
+                            <iframe 
+                                class="responsive-iframe"
+                                src="https://www.youtube.com/embed/nOSNotrrNV4" 
+                                title="iPhone 17 Pro Max PHỐT nhiều quá !!!" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="card-review-content">
+                            <p class="card-review-title">iPhone 17 Pro Max PHỐT nhiều quá !</p>
+                            <div class="product-info-mini">
+                                <img src="./img/iphone/iphone-17-pro-max-2_1.webp" alt="IPhone mini icon">
+                                <div>
+                                    <p class="product-name-mini">IPhone 17 Pro Max 256GB</p>
+                                    <p class="product-price-mini">39.990.000 VNĐ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-card-item">
+                        <div class="video-thumb-container">
+                            <iframe 
+                                class="responsive-iframe"
+                                src="https://www.youtube.com/embed/nOSNotrrNV4" 
+                                title="iPhone 17 Pro Max PHỐT nhiều quá !!!" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="card-review-content">
+                            <p class="card-review-title">iPhone 17 Pro Max PHỐT nhiều quá !</p>
+                            <div class="product-info-mini">
+                                <img src="./img/iphone/iphone-17-pro-max-2_1.webp" alt="IPhone mini icon">
+                                <div>
+                                    <p class="product-name-mini">IPhone 17 Pro Max 256GB</p>
+                                    <p class="product-price-mini">39.990.000 VNĐ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row pb-3">
+                <div class="col-md-4 mb-3">
+                    <h5 style="color: #1466bd; font-weight: bold;">ShopPhoneS</h5>
+                    <p>Cửa hàng bán lẻ điện thoại chuyên về Iphone uy tín hàng đầu Việt Nam. Cam kết sản phẩm chính hãng, giá cạnh tranh.</p>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <h5 style="color:#1466bd; font-weight: bold;">Hỗ trợ</h5>
+                    <ul style="list-style: none; padding: 0;">
+                        <li><a href="#">Chính sách bảo hành</a></li>
+                        <li><a href="#">Chính sách đổi trả</a></li>
+                        <li><a href="#">Tuyển dụng</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-5 mb-3">
+                    <h5 style="color: #1466bd; font-weight: bold;">Liên hệ</h5>
+                    <p><i class="bi bi-geo-alt-fill"></i>   Trụ sở:123 Thủ Khoa Huân, phường Phan Thiết, tỉnh Lâm Đồng</p>
+                    <p><i class="bi bi-phone-fill"></i>   Hotline: 0123.543.756</p>
+                    <p><i class="bi bi-envelope-at-fill"></i>   Email: ShopPhoneS@gmail.com</p>
+               </div>
+            </div>
+            <hr style="border-color: #495957;">
+            <div class="text-center">
+                <small>&copy; 2025 ShopPhoneS. All rights reserved.</small>
+            </div>
+        </div>
+    </footer>    
+    <a href="#" class="back-to-top" id="backtotopbtn" style="display:none; text-decoration: none;">
+        Lên đầu <i class="bi bi-arrow-up-circle"></i>
+    </a>
+    <script src="./JavaScript/autoscroll-btn.js"></script>
+    <script src="./JavaScript/autovideo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./JavaScript/fontpage.js"></script>
+</body>
+</html>
