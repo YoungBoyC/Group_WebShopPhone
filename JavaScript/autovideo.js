@@ -1,54 +1,69 @@
-document.addEventListener('DOMContentLoaded', (event) => {
+// Khai báo biến player ở phạm vi toàn cục hoặc ngoài hàm DOMContentLoaded
+let youtubePlayer;
+const VIDEO_ID = 'myVideo'; // ID của iframe
+
+// Hàm này được YouTube API gọi tự động khi thư viện đã sẵn sàng
+function onYouTubeIframeAPIReady() {
+    const iframeElement = document.getElementById(VIDEO_ID);
+    if (!iframeElement) return;
+
+    // Tạo đối tượng Player và liên kết nó với iframe có ID "myVideo"
+    youtubePlayer = new YT.Player(VIDEO_ID, {
+        events: {
+            // Khi player đã tải xong (Ready), ta bắt đầu theo dõi Intersection Observer
+            'onReady': onPlayerReady
+        }
+    });
+}
+
+// Gán hàm khởi tạo toàn cục (BẮT BUỘC)
+window.onYouTubeIframeAPIReady = onYouTubeIframeAPIReady;
+
+
+function onPlayerReady(event) {
+    const player = event.target; // Chính là youtubePlayer
+    const iframeElement = document.getElementById(VIDEO_ID);
     
-    // 1. Lấy phần tử video và liên kết (Định nghĩa ở đầu scope)
-    const videoElement = document.getElementById('myVideo');
-    const discoverLink = document.getElementById('discoverVideoLink');
-
-    // Nếu không tìm thấy video, dừng script
-    if (!videoElement) return;
-
-    // 2. Định nghĩa các tùy chọn cho Intersection Observer (ĐÃ BỔ SUNG)
+    // Tùy chọn cho Intersection Observer: Phát khi 70% iframe hiển thị
     const options = {
-        root: null, // Theo dõi viewport
+        root: null, 
         rootMargin: '0px',
-        threshold: 0.7 // Tự động phát khi 70% video hiển thị
+        threshold: 0.7 
     };
 
-    // 3. Xử lý sự kiện Jump Link (Nếu liên kết tồn tại)
-    if (discoverLink) {
-        discoverLink.addEventListener('click', function(e) {
-            // e.preventDefault(); // Bạn có thể bỏ qua dòng này nếu muốn Jump Link hoạt động bình thường
-            
-            // Đặt một độ trễ nhỏ để đảm bảo trình duyệt đã cuộn xong
-            setTimeout(() => {
-                // Sau khi cuộn, BẮT BUỘC video phát
-                videoElement.play().catch(error => {
-                    console.error("Lỗi khi phát video sau khi nhấn link:", error);
-                });
-            }, 100); 
-        });
-    }
-
-
-    // 4. Tạo Intersection Observer
+    // Tạo Intersection Observer
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                // Video đang nằm trong viewport -> PLAY (chỉ hoạt động khi có thuộc tính muted)
-                videoElement.play().catch(error => {
-                    console.error("Lỗi khi cố gắng phát video:", error);
-                });
-            } else {
-                // Video ra khỏi viewport -> PAUSE
-                // QUAN TRỌNG: Không tạm dừng nếu video đã bị buộc phát bằng Jump Link và người dùng đang xem
-                // Nếu video có thuộc tính controls, người dùng có thể điều khiển thủ công.
-                if (videoElement.hasAttribute('controls') || videoElement.autoplay) {
-                    videoElement.pause(); 
+                // ĐANG XUẤT HIỆN TRONG VIEWPORT -> PHÁT VIDEO
+                player.playVideo();
+                // Bổ sung: Đảm bảo video đang tắt tiếng (vì YouTube API đôi khi yêu cầu gọi lại lệnh này)
+                if (player.isMuted() !== true) {
+                    player.mute();
                 }
+
+            } else {
+                // ĐÃ CUỘN RA KHỎI VIEWPORT -> TẠM DỪNG VIDEO
+                player.pauseVideo();
             }
         });
-    }, options); // options đã được định nghĩa
+    }, options);
 
-    // 5. Bắt đầu theo dõi
-    observer.observe(videoElement);
-});
+    // Bắt đầu theo dõi iframe
+    observer.observe(iframeElement);
+    
+    
+    // Xử lý sự kiện Jump Link (Nếu có)
+    const discoverLink = document.querySelector('.btn-discover-video');
+    if (discoverLink) {
+        discoverLink.addEventListener('click', function(e) {
+            // ... (Xử lý cuộn nếu cần) ...
+            
+            // Buộc phát video khi người dùng nhấn nút "Khám phá"
+            setTimeout(() => {
+                player.playVideo();
+                player.unMute(); // Có thể mở tiếng khi người dùng chủ động tương tác
+            }, 100); 
+        });
+    }
+}
