@@ -1,0 +1,156 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/*Biến Css thuần */
+:root{
+    --text-light:#f8f9fa;
+    --card-dark:#b9b9b9;
+    --primary-color: #d83d73;
+    --secondary-color:#eb5757;
+    --text-color: #333;
+    --bg-light:#f7f7f7;
+    --font-stack:'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+body{
+    font-family: var(--font-stack);
+    color:var(--text-color);
+}
+
+
+/*1. Sử dụng thuần flexbox và css thuần cho HEADER*/
+.header-nav{
+    background-color:#fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding:10px 0;
+}
+
+.nav-container{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    max-width:1200px;
+    margin:0 auto;
+    padding:0 15px;
+}
+
+.nav-menu{
+    list-style:none;
+    display:flex;
+    gap:25px;
+    margin:0;
+    padding:0;
+}
+
+.nav-menu a{
+    text-decoration:none;
+    color: var(--text-color);
+    padding: 10px 0;
+    display: block;
+    font-weight:500;
+}
+
+.nav-menu li{
+    position:relative;
+}
+
+.nav-menu ul{
+    list-style: none;
+    padding:0;
+    margin:0;
+    position:absolute;
+    top:100%;
+    left: 0;
+    border-radius:10px;
+    background-color: #fff;
+    border:1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    min-width: 180px;
+    z-index:100; 
+    
+    /*Ẩn Menu con*/
+    display:none;
+    opacity:0;
+    transition:opacity 0.3 ease;
+    pointer-events:none;
+}
+
+.nav-menu li:hover >ul{
+    display: block;
+    opacity: 1;
+    pointer-events:auto;
+}
+
+.nav-menu ul li{
+    width:100%;
+    border-bottom:1px solid #eee;
+}
+
+.nav-menu ul li:last-child{
+    border-bottom:none;
+}
+
+.nav-menu ul a{
+    color:#333;
+    text-shadow: 0 6px 13px rgba(0,0,0,0.1);
+    padding:8px 16px;
+    white-space: nowrap;
+    transition:tranform 0.3s ease;
+}
+
+.nav-menu ul a:hover{
+    color: #f7a048;
+}
+
+.search-bar{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    max-width:500px;
+    margin:10px auto;
+    padding: 10px;
+}
+
+.search-bar input{
+    width:60%;
+    padding: 8px 15px;
+    border :1px solid #ddd;
+    border-radius:7px;
+}
+
+.search-bar button{
+    margin-left: 10px;
+    padding: 6px 15px;
+    background-color: #007bff;
+    color:white;
+    border: none;
+    border-radius: 8px;
+    font-size:17px;
+    cursor: pointer;
+    transition:background-color 0.3s ease;
+}
+
+.search-bar button:hover{
+    background-color: #014c9c;
+}
+
+.logo a{
+    font-size: 28px;
+    font-weight: bold;
+    color:var(--text-color);
+    text-decoration:none;
+}
+
+.utility-links{
+    display: flex;
+    gap:15px;
+    margin-left: 40px;
+}
+
+.utility-links a{
+    color: var(--text-color);
+    font-size:1.2rem;
+    margin-left: 10px;
+}
