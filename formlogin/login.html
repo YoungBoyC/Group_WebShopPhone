@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styless.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="formdangnhap">  
+        <form action="" method="post">  
+            <h1>Login</h1>
+            <label for="dangnhap">Username</label>
+            <input id="fdangnhap" type="text" name="tendangnhap"  placeholder="Tên Đăng Nhập" required>
+            <i class="fa-solid fa-user"></i>
+
+            <label for="matkhau">Password</label>
+            <input id="pmatkhau" type="text" name="matkhaudangnhap" placeholder="Nhập mật khẩu" required>
+            <i class="fa-solid fa-lock"></i>
+
+            <div class="remember-me">
+                <input type="checkbox" id="checknhotk" name="checktk" value="ghinho">
+                <label for="checkghinhotk">Ghi nhớ tài khoản</label>
+            </div>
+            <a href="#">Quên mật khẩu ?</a>
+            <button type="submit">Đăng nhập</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

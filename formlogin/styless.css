@@ -1,0 +1,120 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to left bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #839fe2, #6da3df, #5aa6d9, #3da3c9, #2b9eb6, #2a99a1, #35928c);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh; 
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.formdangnhap {
+    background-color: #f7e7e777;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+    width: 100%;
+    max-width: 400px; 
+    position: relative; 
+}
+
+.formdangnhap h1 {
+    text-align: center;
+    color: #333; 
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.formdangnhap form {
+    display: flex;
+    flex-direction: column; 
+}
+
+.formdangnhap label {
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+}
+
+.formdangnhap input[type="text"],
+.formdangnhap input[type="password"]
+.formdangnhap input[type="checkbox"] {
+    width: calc(100% - 30px);
+    padding: 12px 15px; 
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    padding-right: 40px; 
+}
+
+.formdangnhap input[type="text"][value="Nhập mật khẩu"] {
+    color: #999;
+}
+
+.formdangnhap .fa-solid {
+    position: absolute;
+    right: 60px; 
+    color: #ccc; 
+    font-size: 18px;
+}
+
+.formdangnhap .fa-user {
+    top: 155px; 
+    right: 30px;
+}
+
+
+.formdangnhap .fa-lock {
+    top: 250px;
+    right: 30px;
+}
+
+.formdangnhap input[type="checkbox"] {
+    margin-right: 8px; 
+    margin-bottom: 20px; 
+}
+
+.formdangnhap label[for="checkghinhotk"] {
+    display: inline-block; 
+    margin-bottom: 20px;
+    font-weight: normal; 
+    color: #555;
+}
+
+.formdangnhap a {
+    color: #007bff; 
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: right; 
+}
+
+.formdangnhap a:hover {
+    text-decoration: underline;
+}
+
+.formdangnhap button[type="submit"] {
+     background-image: linear-gradient(to right bottom, #4f75af, #0094c4, #00afb2, #13c27f, #a2cb45);
+    color: #fff; 
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.formdangnhap button[type="submit"]:hover {
+    background-color: #0056b3; 
+}
+ 
+.remember-me{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 9px;
+}
